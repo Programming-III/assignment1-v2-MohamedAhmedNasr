@@ -7,7 +7,6 @@
 
 
 using namespace std;
-
 // ==================== Person Class Implementation =========================
 person::person(string name, int id) {
     this->name = name;
