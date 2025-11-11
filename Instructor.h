@@ -4,21 +4,18 @@
 #include "Person.h"
 using namespace std;
 //#write Instructor class here
-class person {
-private:
-    string name;
-    int id ;
+class instructor  : person{
+    private:
+    string department;
+    int experienceyears;
     public:
-    person();
-    person(string name, int id);
-    void  display() ;
-    string get_name();
-    int get_id();
-    ~person();
-
+    instructor();
+    instructor(string department, int experienceyears) ;
+    void display();
+    string get_department();
+    int getexperienceyears();
+    ~instructor();
 };
-
-
 
 
 
