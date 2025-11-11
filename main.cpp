@@ -32,7 +32,8 @@ person::~person() {
 
 
 // ==================== Student Class Implementation ====================
-student::student(int YearLevel , string major) {
+student::student(int YearLevel , string major) : person(name, id){
+    
     this->YearLevel = YearLevel;
     this->major = major;
 }
@@ -55,7 +56,7 @@ student::~student() {
 
 
 // ==================== Instructor Class Implementation ====================
-instructor::instructor(string department, int experienceyears) {
+instructor::instructor(string department, int experienceyears) : person(name, id) {
     this->department = department;
     this->experienceyears = experienceyears;
 }
