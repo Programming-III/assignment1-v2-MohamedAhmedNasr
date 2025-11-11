@@ -5,7 +5,18 @@
 #include <string>
 #using namespace std;
 //#write student class here
-
+class student : person{
+    private:
+        int YearLevel;
+    string major;
+public:
+    student();
+    student(int YearLevel , string major);
+    void display() ;
+    string getmajor() ;
+    int getyearlevel();
+    ~student();
+}
 
 
 
